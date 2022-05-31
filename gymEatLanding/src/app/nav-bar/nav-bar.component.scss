@@ -1,0 +1,58 @@
+@keyframes degradadoCabecera {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 50% 100%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.navBar{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  width: 100%;
+  height: 65px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar img{
+  background: linear-gradient(90deg,var(--darkRed),var(--darkGreen));
+  background-size: 200% 200%;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 60px;
+  padding: 10px;
+  animation-name: degradadoCabecera;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.btn1 {
+  padding: 10px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn1:hover{
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  transform: scale(110%);
+  transition: 0.3s;
+  box-shadow: var(--black) 5px 5px;
+}
