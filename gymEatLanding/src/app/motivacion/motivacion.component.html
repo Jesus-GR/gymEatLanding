@@ -1,0 +1,46 @@
+
+<div class="container">
+  <div class="player">
+    <div class="player__controls">
+      <div class="player__btn player__btn--small">
+        <i class="fas fa-arrow-left" routerLink="/home"></i>
+      </div>
+      <h5 class="player__title">BSO ROCKY</h5>
+      <div class="player__btn player__btn--small">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="player__album">
+      <img
+        src="../../assets/imd/kisspng-rocky-balboa-captain-ivan-drago-film-5b0de8490a24b8.2111788715276380890416.png"
+        alt=""
+        class="player__img">
+    </div>
+    <h3 class="player__song">The eye of the tiger</h3>
+    <input type="range" value="20" min="0" class="player__level" id="songLength">
+    <div class="audio-duration">
+      <div class="start">00:01</div>
+      <div class="end">04:00</div>
+    </div>
+    <audio class="player__audio" controls preload="metadata" #audio >
+      <source src="../../assets/songs/rockySong.mp3">
+    </audio>
+
+    <div class="player__controls">
+      <div class="player__btn player__btn--medium">
+        <i class="fas fa-backward"></i>
+      </div>
+      <a class="player__btn player__btn--medium blue" (click)="playPause()">
+        <i class="fas fa-play play-btn" *ngIf="!buttonAudioState"></i>
+        <i class="fas fa-pause pause-btn" *ngIf="buttonAudioState"></i>
+      </a>
+
+      <div class="player__btn player__btn--medium">
+        <i class="fas fa-forward"></i>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,7 +1,11 @@
-<div class="navBar">
-  <button href="" class="btn1" routerLink="/home">¿Qué es GymEat?</button>
-  <button href="" class="btn1" routerLink="/logo">Logotipo animado</button>
-  <img src="../../assets/imd/dieta-equilibrada.png" alt="" />
-  <button href="" class="btn1">Funcionamiento</button>
-  <button href="" class="btn1">Descarga</button>
+<div class="navBar" #myTopnav>
+    <img src="assets/imd/dieta-equilibrada.png" alt="" />
+    <a routerLink="/home">Home</a>
+    <a routerLink="/motivacion">Music</a>
+    <a routerLink="/motivacion">¿Why GymEat?</a>
+    <a routerLink="/descarga">Download</a>
+    <a  class="icon" (click)="changeNavBar()">
+      <i class="fa fa-bars"></i>
+    </a>
 </div>
+

@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { QueEsGymEatComponent } from './que-es-gym-eat/que-es-gym-eat.component';
 import { JsProvidersService } from './services/js-providers.service';
-import { LogotipoAnimadoComponent } from './logotipo-animado/logotipo-animado.component';
+import { MotivacionComponent } from './motivacion/motivacion.component';
+import { DescargaComponent } from './descarga/descarga.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     QueEsGymEatComponent,
-    LogotipoAnimadoComponent
+    MotivacionComponent,
+    DescargaComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

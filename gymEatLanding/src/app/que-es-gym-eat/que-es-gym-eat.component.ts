@@ -1,5 +1,6 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ConnectableObservable } from 'rxjs';
 import { JsProvidersService } from '../services/js-providers.service';
 
 @Component({
@@ -9,14 +10,27 @@ import { JsProvidersService } from '../services/js-providers.service';
 })
 export class QueEsGymEatComponent implements OnInit {
 
+@ViewChild('video') video!: ElementRef;
   constructor(private jsProvider: JsProvidersService) {
-    jsProvider.carga(["script"]);
+
   }
 
   ngOnInit(): void {
 
   }
 
+  playPauseVideo(){
+    const video = this.video.nativeElement;
+
+    if(!video.paused && !video.ended){
+      video.pause();
+
+     }
+     else{
+      video.play();
+    }
+  }
 
 
 }
+

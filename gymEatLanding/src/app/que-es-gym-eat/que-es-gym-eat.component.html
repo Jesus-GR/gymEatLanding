@@ -1,25 +1,26 @@
 <div id="parallax">
   <div class="titulo">
-    <h1>¿Que es GymEat?</h1>
+    <h1>¿Qué es GymEat?</h1>
   </div>
 </div>
 
 <div id="video">
-  <video id="medio" onloadedmetadata="this.muted = true" width="750px">
+  <a (click)="playPauseVideo()">
+  <video id="medio" onloadedmetadata="this.muted = true" width="750px" #video>
     <source src="../../assets/video/videoCanvas.mp4" />
   </video>
-  <div class="videoTexto">
+  </a>
     <h2>GymEat es una sencilla aplicación con la que podrás anotar tus progresos
       en el gym para así poder conseguir tus metas.
     </h2>
-  </div>
 </div>
-<canvas id="lienzo"> Su navegador no soporta el elemento canvas </canvas>
+
+<canvas id="lienzo" #lienzo> Su navegador no soporta el elemento canvas </canvas>
 
 <div id="spriteSection">
   <div id="spriteCorre"></div>
   <div >
-      <h3>Simplifica la forma de organizar <br> tus entrenamientos para así ponerte más mamado</h3>
+      <h3>Simplifica la forma de organizar <br> tus entrenamientos para así ponerte más mamado.</h3>
   </div>
 </div>
 
@@ -38,4 +39,7 @@
   <img src="assets\imd\rutina-removebg-preview.png" alt="">
 </div>
 
-<div id="parallax3"></div>
+<div id="parallax3">
+</div>
+
+

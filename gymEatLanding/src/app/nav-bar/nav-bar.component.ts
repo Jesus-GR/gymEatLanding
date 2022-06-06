@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ThisReceiver } from '@angular/compiler';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { JsProvidersService } from '../services/js-providers.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('myTopnav') topNav!: ElementRef;
+  constructor(private jsProvider: JsProvidersService) { }
 
   ngOnInit(): void {
+
+  }
+
+  changeNavBar(){
+    var x = this.topNav.nativeElement;
+    if(x !== null){
+      if (x.className === "navBar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navBar";
+    }
+    }
   }
 
 }

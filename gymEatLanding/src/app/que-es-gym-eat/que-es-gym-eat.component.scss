@@ -9,54 +9,47 @@
   background-size: cover;
   background-position: center;
 }
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff,
-               0 0 20px  #fff,
-               0 0 30px  #fff,
-               0 0 40px  var(--red),
-               0 0 70px  var(--red),
-               0 0 80px  var(--red),
-               0 0 100px var(--red),
-               0 0 150px var(--red);
-  }
-  to {
-    text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 20px var(--red),
-               0 0 35px var(--red),
-               0 0 40px var(--red),
-               0 0 50px var(--red),
-               0 0 75px var(--red);
-  }
-}
+
 .titulo{
-  font-size: 2.5em;
-  text-shadow: black 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 200px;
+  background-color: rgba($color:#8f909110 , $alpha: 0.9);
+  border-radius: 12px 0px 12px 0px;
+  box-shadow: 5px 5px 6px 1px #0001;
+  margin: auto;
+
+  font-size: 2em;
   color: white;
   text-align: center;
   margin: auto;
-  animation-name: neon1;
-  animation-duration: 8s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+}
+.titulo h1{
+  border: 3px  solid white ;
+  padding: 40px;
+  border-radius: 0 12px 0px 12px;
+  box-shadow: inset -8px -8px 20px #fff9, inset 8px 8px 20px #0003;
 }
 
 @keyframes andaSrpite {
   from{background-position: 1px 0px;}
   to{background-position: -3000px 0px;}
 }
+
 #spriteSection{
+  padding-top: 100px;
+  margin-top: -100px;
   display: flex;
   flex-direction: row;
   width: 100%;
   color: black;
   font-size: 1.8em;
-  background-color: white;
+  background-color: #D3D5D8;
   justify-content: space-around;
   align-items: center;
-  height: 200px;
+  height: 290px;
 }
 #spriteCorre{
   background-image: url("../../assets/imd/pngwing.com.png");
@@ -78,11 +71,16 @@
 
 }
 
+#video h2{
+  width: 100%;
+  margin-right: 60px;
+}
+
 #parallax2{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12,100px);
-  grid-template-rows: repeat(12,100px);
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows: repeat(8,100px);
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   background-color: #232831;
@@ -90,12 +88,12 @@
 }
 .backgroundGrid{
   width: 100%;
-  background-color: white;
-  grid-column: 1/16 ;
+  background-color: #D3D5D8;
+  grid-column: 1/19 ;
   grid-row: 1;
 }
 #idea{
-  grid-column: 3/7;
+  grid-column: 3/9;
   grid-row: 3;
   font-size: 1em;
   color: white;
@@ -103,17 +101,17 @@
 }
 #parallax2 img:nth-of-type(1){
   width: 200px;
-  grid-column: 9;
+  grid-column: 13;
   grid-row: 3;
 }
 #parallax2 img:nth-of-type(2){
   width: 200px;
-  grid-column: 11;
+  grid-column: 14;
   grid-row: 1;
 }
 #parallax2 img:nth-of-type(3){
   width: 200px;
-  grid-column: 13;
+  grid-column: 15;
   grid-row: 2;
 }
 
@@ -124,3 +122,214 @@
   background-size: cover;
   background-position: center;
 }
+
+
+@media screen and (max-width: 1590px) {
+
+  #idea{
+    grid-column: 3/11;
+    grid-row: 3;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  #idea{
+    grid-column: 3/12;
+    grid-row: 3;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  #video{
+   margin-left: -50px;
+  }
+
+  #video h2{
+    margin-left: -100px;
+   }
+
+   #spriteSection{
+     height: 352px;
+     justify-content: space-between;
+  }
+
+   #spriteCorre{
+     margin-left: 150px;
+   }
+
+
+   #spriteSection h3{
+     width: 70%;
+     margin-right: -100px;
+
+   }
+
+   #idea{
+    grid-column: 3/12;
+    grid-row: 2;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  #spriteSection h3{
+
+    margin-right: -150px;
+
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .backgroundGrid{
+    background-color: #232831;
+  }
+  #idea{
+    grid-column: 3/18;
+    grid-row: 1;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
+  #parallax2 img:nth-of-type(1){
+    width: 150px;
+    grid-column: 7;
+    grid-row: 4;
+  }
+  #parallax2 img:nth-of-type(2){
+    width: 150px;
+    grid-column: 10;
+    grid-row: 4;
+  }
+  #parallax2 img:nth-of-type(3){
+    width: 150px;
+    grid-column: 13;
+    grid-row: 4;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+
+  #video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #video h2{
+    width: 60%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #spriteSection{
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #spriteSection h3{
+  width: 100%;
+  text-align: center;
+}
+
+#spriteCorre{
+  height: 250px;
+  margin-top: -150px;
+  margin-left: -30px;
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+  #idea{
+    grid-column: 2/15;
+    font-size: 0.8em;
+  }
+  #parallax2 img:nth-of-type(1){
+    width: 130px;
+    grid-column: 7;
+    grid-row: 4;
+  }
+  #parallax2 img:nth-of-type(2){
+    width: 130px;
+    grid-column: 10;
+    grid-row: 4;
+  }
+  #parallax2 img:nth-of-type(3){
+    width: 130px;
+    grid-column: 13;
+    grid-row: 4;
+  }
+
+
+
+  #video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #video h2{
+    width: 60%;
+    text-align: center;
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  #parallax2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,100px);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #232831;
+    height: 700px;
+  }
+  #idea{
+    display: none;
+  }
+  #parallax2 img:nth-of-type(1){
+    margin-top: 20px;
+    width: 130px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #parallax2 img:nth-of-type(2){
+    margin-top: 20px;
+    width: 130px;
+    grid-column: 4;
+    margin-right: 150px;
+    grid-row: 1;
+  }
+  #parallax2 img:nth-of-type(3){
+    width: 130px;
+    grid-column: 3;
+    grid-row: 4;
+  }
+
+}
+

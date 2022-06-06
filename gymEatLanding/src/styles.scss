@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 /****************Colores*****************/
-body * {--red:#E06A67}
-body * {--darkGreen:#26996B}
-body * {--green:#7EE0B9}
-body * {--darkRed:#942926}
-body * {--black:#000000}
-body * {--white:#FFFFFF}
+
+*{
+  --background: #D3D5D8;
+  --gray: #797d7f;
+  --lightShadow: #FFFF;
+  --white:#FFFFFF;
+  --black:#000000;
+  --darkRed:#942926;
+  --green:#7EE0B9;
+  --darkGreen:#26996B;
+  --red:#E06A67;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--background);
+}
