@@ -1,0 +1,95 @@
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container__canvas{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container__canvas h2{
+  position: absolute;
+  top: 130px;
+  left: 600px;
+}
+#canvasId{
+  background-image: url('../../assets/imd/libreta.png');
+  background-size: 600px;
+}
+
+.container__canvas--texto{
+  position: absolute;
+  top: 200px;
+  left: 350px;
+}
+
+#medio{
+  width: 300px;
+  height: 450px;
+}
+
+.container__canvas--imagen{
+  transform: rotate(-90deg);
+  background: none;
+  width: 500px;
+
+}
+.container__canvas--button{
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+   -webkit-appearance: button; /* for input */
+     -moz-user-select: none;
+      -ms-user-select: none;
+      font-size: 2em;
+      h3{
+        margin: auto;
+        text-align: center;
+      }
+}
+
+
+@media screen and (max-width: 1300px) {
+  .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 1110px) {
+  .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container__canvas--imagen{
+    transform: rotate(0deg);
+    background: none;
+    width: 500px;
+
+  }
+
+
+}
+

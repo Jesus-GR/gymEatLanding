@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CanvasComponent } from './canvas/canvas.component';
 import { DescargaComponent } from './descarga/descarga.component';
 import { MotivacionComponent } from './motivacion/motivacion.component';
 import { QueEsGymEatComponent } from './que-es-gym-eat/que-es-gym-eat.component';
@@ -7,6 +8,7 @@ import { QueEsGymEatComponent } from './que-es-gym-eat/que-es-gym-eat.component'
 const routes: Routes = [
   {path: 'home', component: QueEsGymEatComponent},
   {path: 'motivacion', component: MotivacionComponent},
+  {path: 'canvas', component: CanvasComponent},
   {path: 'descarga', component: DescargaComponent},
   {path:'**', pathMatch:'full', redirectTo:'home'},
 
@@ -17,3 +19,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

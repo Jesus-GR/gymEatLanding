@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="container__canvas">
+    <h1>Cambia esto...</h1>
+    <canvas id="canvasId" #canvasRef></canvas>
+  <button class="container__canvas--button" (click)="clearZone()" type="button"><i class="fa-solid fa-eraser"></i></button>
+  </div>
+
+  <img class="container__canvas--imagen" src="../../assets/imd/kisspng-arrow-computer-icons-logo-white-down-arrow-png-5ab1bd5cde13f0.7986932615215977889096.png">
+
+  <div class="container__canvas--video">
+    <h1>¡Por esto!</h1>
+    <a (click)="playPauseVideo()">
+      <video id="medio" onloadedmetadata="this.muted = true" width="750px" #video>
+        <source src="../../assets/video/videoEjercicios.mp4" />
+      </video>
+      <h3>Click sobre el video para ver</h3>
+      </a>
+  </div>
+
+
+</div>

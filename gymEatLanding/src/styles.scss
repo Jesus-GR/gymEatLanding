@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /****************Colores*****************/
 
+@font-face{
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto Slab', serif;
+}
 *{
   --background: #D3D5D8;
   --gray: #797d7f;
@@ -18,4 +22,12 @@
 
 body{
   background-color: var(--background);
+}
+
+h4{
+  font-family: 'Bebas Neue', cursive;
+}
+
+a{
+  font-family: 'Bebas Neue', cursive;
 }
