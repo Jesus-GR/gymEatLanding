@@ -1,0 +1,3 @@
+Para anime js
+
+npm install animejs --save
