@@ -13,7 +13,17 @@
   </ul>
 
   <ul class="footer__container--element">
-    <li><img src="../../assets/imd/gymEatLogo2-removebg-preview.png" class="generic-anchor footer-list-anchor logo"></li>
+    <li>
+      <img src="../../assets/imd/gymEatLogo2-removebg-preview.png" class="generic-anchor footer-list-anchor logo">
+    </li>
+    <li>
+      <h4>Click para cambiar de color</h4>
+      <svg class="cuadradoSVG">
+        <g>
+          <rect x="0" y="0" width="100" height="100" [attr.fill]="fillColor" (click)="changeColor()" />
+        </g>
+      </svg>
+    </li>
   </ul>
 
   <ul class="footer__container--element">
