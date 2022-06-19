@@ -90,3 +90,9 @@ Cumple con los estándares de calidad y accesivilidad de WCAG 2, ya que tenemos 
 
 Vemos que en el contraste entre letra verde y fondo negro obtenemos un 7.54 (siendo el mínimo 4.5) y en el contraste entre letra blanca y fondo negro obtenemos un 14.48.
 
+## Metodología BEM
+He usado el sistema BEM para nombrar las clases en el scss.
+
+![image](https://user-images.githubusercontent.com/72436145/174501512-0af8ff2d-3b6d-4f16-981f-0bc51e2ace5d.png)
+
+
